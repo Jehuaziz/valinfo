@@ -1,0 +1,313 @@
+/* Overall color */
+:root{
+    --primary: #fa4454;
+    --dark: #364966;
+    --light: #F0F8FF;
+    --shadow: #000000 ;
+    --font: #FF0000;
+    --bshadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+}
+/* everythng in html */
+html {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--light);
+}
+/* overall body */
+body{
+    background: var(--primary);
+    line-height: 3;
+    margin: 30px 50px;
+}
+/* class btn */
+.btn{
+    text-decoration: none;
+    border: 0;
+    padding: 0.6rem 1.8rem;
+    color: var(--font);
+    font-size: 1.50rem;
+    font-weight: bolder;
+}
+/* all img */
+.img{
+    max-width: 100%;
+}
+/* class main-box */
+.main-box{
+    display: grid;
+    grid-gap: 20px;
+} 
+/* class of menu2 */
+.menu2 ul{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    padding: 0;
+}
+.menu2 a{
+    background: var(--dark);
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+.menu2 a:hover{
+    background: var(--light);
+    color: var(--dark);
+}
+/* Section of main-box */
+.main-box{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'valorant valorant gameplay'
+    'valorant valorant gameplay';
+}
+/* class valorant */
+.valorant{
+    padding: 3rem;
+    min-height: 400px;
+    background: url(valora.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--bshadow);
+    grid-area: valorant;
+}
+.valorant h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+.valorant p{
+    margin-top: 0;
+    font-size: 1rem;
+}
+.valorant a{
+    background: var(--dark);
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--bshadow);
+}
+.valorant a:hover{
+    background: var(--light);
+}
+/* class gameplay */
+.gameplay{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: url(brim.png);
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: var(--bshadow);
+    padding: 1.3rem;
+    grid-area: gameplay;
+}
+.gameplay h1{
+    font-size: 3rem;
+    color: var(--light);
+}
+.gameplay ul{
+    list-style: none;
+    margin-top: 0;
+}
+.gameplay .btn{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--bshadow);
+    position: relative;
+    right: 20px;
+    display: block;
+    
+}
+.gameplay a:hover{
+    color: var(--light); 
+}
+/* class goods */
+.goods{
+    color: var(--shadow);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas: 
+    'goods1 goods2 goods3';
+}
+.goods1{
+    grid-area: goods1;
+    background: url(gun.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    text-align: center;
+    padding: 0;
+    box-shadow: var(--bshadow);
+}
+.goods1 h3{
+    position: relative;
+    top: 60px;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    color: var(--light);
+}
+.goods2{
+    grid-area: goods2;
+    background: url(agents.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    text-align: center;
+    padding: 0;
+    box-shadow: var(--bshadow);
+}
+.goods2 h3{
+    position: relative;
+    top: 60px;
+    font-size: 2.2rem;
+    color: var(--light);
+}
+.goods3{
+    grid-area: goods3;
+    background: url(maps.webp);
+    background-size: 300px;
+    background-position: center;
+    border-radius: 12px;
+    text-align: center;
+    padding: 0;
+    box-shadow: var(--bshadow);
+}
+.goods3 h3{
+    position: relative;
+    top: 60px;
+    font-size: 2.2rem;
+    color: var(--light);
+}
+.guns{
+    display: grid;
+    grid-template-areas: 
+    'vandal phantom'
+    'classic spectre';
+}
+.vandal{
+    background: var(--dark);
+    margin-right: 10px;
+    grid-area: vandal;
+    padding: 1.2rem 1.3rem;
+    box-shadow: var(--bshadow);
+    border-radius: 12px;
+}
+.phantom{
+    grid-area: phantom;
+    background: var(--dark);
+    margin-right: 10px;
+    padding: 1.2rem 1.3rem;
+    box-shadow: var(--bshadow);
+    border-radius: 12px;
+}
+.classic{
+    grid-area: classic;
+    background: var(--dark);
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 1.2rem 1.3rem;
+    box-shadow: var(--bshadow);
+    border-radius: 12px;
+}
+.spectre{
+    grid-area: spectre;
+    background: var(--dark);
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 1.2rem 1.3rem;
+    box-shadow: var(--bshadow);
+    border-radius: 12px;
+}
+.agents{
+    background: url(yoru2.jpg);
+    background-size: cover;
+    background-position: top;
+    color: var(--light);
+    border-radius: 12px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: 
+    'phoenix phoenix'
+    'reyna sova';
+}
+.phoenix{
+    padding: 1rem;
+}
+.phoenix h1{
+    font-size: 1.8rem;
+}
+.phoenix p{
+    font-size: 1.3rem;
+}
+.reyna{
+    padding: 1rem;
+}
+.reyna h1{
+    font-size: 1.8rem;
+}
+.reyna p{
+    font-size: 1.3rem;
+}
+.sova{
+    padding: 1rem;
+    position: relative;
+    bottom: 70px;
+}
+.sova h1{
+    font-size: 1.8rem;
+}
+.sova p{
+    font-size: 1.3rem;
+}
+.map img{
+    box-shadow: var(--bshadow);
+    margin-top: 0;
+}
+.map h1{
+    font-size: 3rem;
+}
+footer{
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+footer ul{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'kianne aaron jd cheska jehu';
+
+}
+footer h2{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
